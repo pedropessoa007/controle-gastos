@@ -58,7 +58,7 @@ Qualquer pessoa que queira organizar melhor suas finanças pessoais.
 
 ## Autor
 
-SEU NOME AQUI
+Pedro Pessoa Sereno
 
 ## Repositório
 
