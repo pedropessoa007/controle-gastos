@@ -9,7 +9,7 @@ o que pode levar a um desequilíbrio financeiro e um endividamento.
 
 ## Proposta da solução
 
-Aplicação de linha de comando (CLI) simples para registrar, listar,
+Uma Aplicação simples de linha de comando (CLI) simples para registrar, listar,
 remover e totalizar gastos pessoais, ajudando o usuário a ter
 consciência do que está gastando.
 
