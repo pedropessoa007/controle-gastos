@@ -5,7 +5,7 @@
 ## Descrição do problema
 
 Muitas pessoas têm dificuldade em controlar seus gastos do dia a dia,
-o que pode levar a desequilíbrio financeiro e endividamento.
+o que pode levar a um desequilíbrio financeiro e um endividamento.
 
 ## Proposta da solução
 
