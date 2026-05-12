@@ -51,3 +51,26 @@ def test_total_gastos():
     adicionar_gasto("Almoço", 20.00)
     adicionar_gasto("Café", 5.00)
     assert total_gastos() == 25.00
+    
+from unittest.mock import patch
+from cambio import buscar_cotacao_dolar, converter_para_dolar
+
+
+def test_buscar_cotacao_dolar():
+    with patch("cambio.requests.get") as mock_get:
+        mock_get.return_value.json.return_value = {
+            "USDBRL": {"bid": "5.00"}
+        }
+        mock_get.return_value.raise_for_status = lambda: None
+        cotacao = buscar_cotacao_dolar()
+        assert cotacao == 5.00
+
+
+def test_converter_para_dolar():
+    with patch("cambio.requests.get") as mock_get:
+        mock_get.return_value.json.return_value = {
+            "USDBRL": {"bid": "5.00"}
+        }
+        mock_get.return_value.raise_for_status = lambda: None
+        resultado = converter_para_dolar(50.00)
+        assert resultado == 10.00
